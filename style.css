@@ -124,7 +124,7 @@ a{
 .support-guy:hover~.support-guy-menu{
     opacity: 1;
 }
-@media(max-width: 430px) {
+@media(max-width: 300px) {
     .main{
     display: grid;
     grid-template-columns: repeat(5, 1fr);
@@ -197,7 +197,7 @@ a{
     grid-area: gal-pic10;
 }
 }
-@media(max-width: 430px) {
+@media(max-width: 300px) {
     header{
     background-color: darkslategray;
     display: flex;
@@ -277,4 +277,5 @@ a{
 footer{
     background-color: darkslategray;
     margin-top: 100px;
+
 }
