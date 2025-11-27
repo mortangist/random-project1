@@ -1,0 +1,280 @@
+header{
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    font-size: 45px;
+    padding: 10px;
+}
+.button{
+    background-color: darkcyan;
+}
+.button:hover{
+    background: linear-gradient(darkcyan, white);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+.main{
+    display: grid;
+    grid-template-columns: repeat(5, 200px);
+    grid-template-rows: repeat(3, 200px);
+    grid-template-areas: 
+    "gal-pic1 gal-pic1 gal-pic2 gal-pic3 gal-pic4"
+    "gal-pic5 gal-pic6 gal-pic2 gal-pic7 gal-pic8"
+    "gal-pic9 gal-pic6 gal-pic10 gal-pic10 gal-pic10";
+    justify-self: center;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+}
+.main div{
+    border: 1px solid black;
+    opacity: 0.5;
+}
+.gal-pic1:hover{
+    opacity: 0.7;
+}
+.gal-pic2:hover{
+    opacity: 0.7;
+}
+.gal-pic3:hover{
+    opacity: 0.7;
+}
+.gal-pic4:hover{
+    opacity: 0.7;
+}
+.gal-pic5:hover{
+    opacity: 0.7;
+}
+.gal-pic6:hover{
+    opacity: 0.7;
+}
+.gal-pic7:hover{
+    opacity: 0.7;
+}
+.gal-pic8:hover{
+    opacity: 0.7;
+}
+.gal-pic9:hover{
+    opacity: 0.7;
+}
+.gal-pic10:hover{
+    opacity: 0.7;
+}
+
+.gal-pic1{
+    grid-area: gal-pic1;
+}
+.gal-pic2{
+    grid-area: gal-pic2;
+}
+.gal-pic3{
+    grid-area: gal-pic3;
+}
+.gal-pic4{
+    grid-area: gal-pic4;
+}
+.gal-pic5{
+    grid-area: gal-pic5;
+}
+.gal-pic6{
+    grid-area: gal-pic6;
+}
+.gal-pic7{
+    grid-area: gal-pic7;
+}
+.gal-pic8{
+    grid-area: gal-pic8;
+}
+.gal-pic9{
+    grid-area: gal-pic9;
+}
+.gal-pic10{
+    grid-area: gal-pic10;
+}
+
+.support-guy{
+    display: flex;
+    position: relative;
+    left: 1000px;
+    z-index: 100;
+    margin-right: 170px;
+    width: 500px;
+    height: 500px;
+}
+.support-guy-menu{
+    position: relative;
+    left: 1530px;
+    bottom: 400px;
+    border: 1px solid black;
+    font-size: 40px;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    opacity: 0;
+
+
+}
+.support-guy:hover~.support-guy-menu{
+    opacity: 1;
+}
+@media(max-width: 430px) {
+    .main{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 150px);
+    grid-template-areas: 
+    "gal-pic1 gal-pic1 gal-pic2 gal-pic2 gal-pic4"
+    "gal-pic5 gal-pic6 gal-pic2 gal-pic2 gal-pic8"
+    "gal-pic9 gal-pic6 gal-pic10 gal-pic10 gal-pic10";
+    justify-self: center;
+    padding: 20px;
+}
+.main img{
+    width: 100%;
+    height: 100%;
+}
+.main div{
+    border: 1px solid black;
+    opacity: 0.5;
+}
+.gal-pic1:hover{
+    opacity: 1;
+}
+.gal-pic2:hover{
+    opacity: 1;
+    
+}
+.gal-pic3:hover{
+    opacity: 1;
+    display: none;
+    
+}
+
+.gal-pic4:hover{
+    opacity: 1;
+}
+.gal-pic5:hover{
+    opacity: 1;
+}
+.gal-pic6:hover{
+    opacity: 1;
+}
+
+.gal-pic8:hover{
+    opacity: 1;
+}
+.gal-pic9:hover{
+    opacity: 1;
+}
+.gal-pic10:hover{
+    opacity: 1;
+}
+
+.gal-pic1{
+    grid-area: gal-pic1;
+}
+.gal-pic2{
+    grid-area: gal-pic2;
+}
+.gal-pic3{
+    opacity: 0;
+    display: none;
+}
+.gal-pic7{
+    opacity: 0;
+    display: none;
+}
+
+
+.gal-pic10{
+    grid-area: gal-pic10;
+}
+}
+@media(max-width: 430px) {
+    header{
+    background-color: darkslategray;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 5px;
+    height: 100px;
+    width: 100%;
+    font-size: 32px;
+}
+    .support-guy{
+        display: flex;
+        justify-self: right;
+    }
+    .support-guy:hover~.support-guy-menu{
+        opacity: 1;
+
+}
+}
+
+.main2{
+    display: grid;
+    grid-template-columns: repeat(2, 500px);
+    grid-template-rows: 400px 100px;
+    grid-template-areas: 
+    "text1 img1"
+    "button2 img1";
+    justify-self: center;
+    margin-top: 50px;
+}
+.main2 div{
+    border: 1px solid black;
+}
+.text1{
+    grid-area: text1;
+}
+.button2{
+    grid-area: button2;
+    
+}
+.button3{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    justify-self: center;
+    align-items: center;
+    background-color: darkcyan;
+    margin-top: 17px;
+}
+.img1{
+    grid-area: img1;
+    display: flex;
+    justify-self: center;
+
+}
+.button3:hover{
+    background: linear-gradient(darkcyan, white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer{
+    background-color: darkslategray;
+    margin-top: 100px;
+}
